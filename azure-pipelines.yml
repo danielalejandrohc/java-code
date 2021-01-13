@@ -7,7 +7,7 @@ trigger:
 - main
 
 pool:
-  vmImage: 'rancer/prancer-cli:1.0.2'
+  vmImage: 'prancer/prancer-cli:1.0.2'
 
 steps:
 - script: |
