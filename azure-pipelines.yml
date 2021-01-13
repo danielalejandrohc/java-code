@@ -10,6 +10,10 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
+- script: |
+    ls -lt
+  displayName: 'npm install and build'
+
 - task: Gradle@2
   inputs:
     workingDirectory: ''
