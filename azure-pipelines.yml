@@ -7,7 +7,7 @@ trigger:
 - main
 
 pool:
-  vmImage: 'prancer/prancer-cli:1.0.2'
+  vmImage: 'ubuntu-18.04'
 container: 'prancer/prancer-cli:1.0.2'
 steps:
 - script: |
