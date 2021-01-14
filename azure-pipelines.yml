@@ -9,7 +9,8 @@ trigger:
 pool:
   vmImage: 'ubuntu-18.04'
 steps:
-- script: |    
+- script: |
+    pip --version
     pip install prancer-cli==1.0.2
   displayName: 'prepare-env'
   
