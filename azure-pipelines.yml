@@ -12,8 +12,9 @@ steps:
 - script: |
     pip3 --version
     pip3 install prancer-cli==1.0.2
+    prancerent -h
   displayName: 'prepare-env'
   
 - script: |    
-    prancer-cli -h
+    echo x
   displayName: 'run-test'  
