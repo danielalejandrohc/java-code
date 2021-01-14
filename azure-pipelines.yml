@@ -8,8 +8,8 @@ trigger:
 
 pool:
   vmImage: 'ubuntu-18.04'
-container: 'prancer/prancer-cli:1.0.3'
+#container: 'prancer/prancer-cli:1.0.3'
 steps:
 - script: |
-    prancerent -a create
+    docker run --rm prancer/prancer-cli:1.0.3 prancerent -h
   displayName: 'npm install and build'
