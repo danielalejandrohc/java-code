@@ -10,5 +10,5 @@ pool:
   vmImage: 'ubuntu-18.04'
 steps:
 - script: |    
-    docker run --rm -v $(pwd):$(pwd) --entrypoint=$(pwd) prancer/prancer-cli:1.0.3 ls -l
+    docker run --rm -u root -v $(pwd):$(pwd) --entrypoint=$(pwd) prancer/prancer-cli:1.0.3 ls -l
   displayName: 'npm install and build'
