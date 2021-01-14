@@ -11,7 +11,7 @@ pool:
 steps:
 - script: |
     pip3 --version
-    pip3 install prancer-cli==1.0.2
+    sudo pip3 install prancer-cli==1.0.2
     prancerent -h
   displayName: 'prepare-env'
   
