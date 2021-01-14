@@ -10,5 +10,9 @@ pool:
   vmImage: 'ubuntu-18.04'
 steps:
 - script: |    
-    pip --version
-  displayName: 'npm install and build'
+    pip install prancer-cli
+  displayName: 'prepare-env'
+  
+- script: |    
+    prancer-cli -h
+  displayName: 'run-test'  
