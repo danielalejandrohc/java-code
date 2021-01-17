@@ -9,6 +9,7 @@ steps:
   displayName: 'prepare-env'
   
 - script: |    
+    printenv
     prancerent -a create
     prancerent -t default_container -o
   displayName: 'run-test'  
