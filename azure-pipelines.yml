@@ -10,6 +10,6 @@ steps:
   
 - script: |    
     printenv
-    prancerent -a create
+    prancerent -a create -u ${ENTCLI_KEY} -p ${ENTCLI_SECRET}
     prancerent -t default_container -o
   displayName: 'run-test'  
