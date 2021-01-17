@@ -10,7 +10,6 @@ steps:
   displayName: 'prepare-env'
   
 - script: |    
-    prancerent -h
     prancerent -a create
     prancerent -t default_container -o
   displayName: 'run-test'  
